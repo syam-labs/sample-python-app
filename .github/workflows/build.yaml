@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  REGISTRY: ${{ secrets.ACR_LOGIN_SERVER }}
+  REGISTRY: ${{ env.ACR_LOGIN_SERVER }}
   IMAGE_NAME: hello-python
 
 jobs:
