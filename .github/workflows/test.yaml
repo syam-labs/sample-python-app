@@ -1,13 +1,1 @@
-name: Test Runner
 
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  test:
-    runs-on: [self-hosted, linux, ephemeral, custom]  # match your runner labels
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
